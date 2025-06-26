@@ -7,7 +7,7 @@
   --secondary-color-2: #4b5563;
   --secondary-color-3: #9ca3af;
 
-  --highlight-color: #2563eb;
+  --highlight-color: #1e3a8a;
   --highlight-color-2: #1e40af;
   --highlight-color-3: #3b82f6;
 
@@ -17,17 +17,18 @@
   --nav-bg: #1e3a8a;
   --section-bg: #f3f4f6;
   --border-color: #e5e7eb;
-  --hero-gradient: linear-gradient(135deg, var(--primary-color), #ffffff);
+  --hero-gradient: linear-gradient(to bottom, var(--primary-color), #ffffff 99%);
 }
 
 .dark-mode {
   --bg-color: #000000;
   --text-color: #f9fafb;
+  --highlight-color: #60a5fa;
   --card-bg: #1f2937;
   --nav-bg: #1e3a8a;
   --section-bg: #111827;
   --border-color: #374151;
-  --hero-gradient: linear-gradient(135deg, var(--primary-color), #000000);
+  --hero-gradient: linear-gradient(to bottom, var(--primary-color), #000000 99%);
 }
 
 
@@ -123,7 +124,7 @@ nav ul li a:hover {
     text-align: center;
     background: var(--hero-gradient);
     color: var(--text-color);
-    padding: 0 1rem;
+    padding: 0 1rem 6rem;
 }
 
 
@@ -158,11 +159,14 @@ nav ul li a:hover {
 /* Sections */
 .section {
     padding: 4rem 1rem;
+    margin-top: 2rem; /* optional visual buffer */
     background-color: var(--section-bg);
-    max-width: 1400px; 
-    margin: 0 auto;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
 }
+
 
 
 .section h2 {
