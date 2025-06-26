@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thanveer Muthukumar | Personal Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-yada..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body class="light-mode">
+  <header>
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero" role="region" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">Hi, I'm <span class="highlight">Thanveer Muthukumar</span></h1>
+        <p>Web Developer | Designer | Creative Thinker</p>
+        <button id="cta-button" class="btn">View My Work</button>
+      </div>
+    </section>
+
+    <section id="about" class="section" role="region" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a passionate web developer with experience in creating modern, responsive websites. I love turning ideas into reality through code.</p>
+          <p>When I'm not coding, you can find me reading, playing Hearts of Iron 4 or wikisurfing!</p>
+          <div class="skills">
+            <!-- UPDATE IN FUTURE WITH MORE STUFF!!! -->
+            <h3>My Skills</h3>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Python</li>
+              <li>Django</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section" role="region" aria-labelledby="portfolio-title">
+      <h2 id="portfolio-title">My Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <h3><a href="#" class="project-link">My Personal Website!</a></h3>
+          <p>What you see right here!</p>
+        </div>
+        <div class="portfolio-item">
+          <h3><a href="https://github.com/ThanveerCodez/ControlSim" class="project-link">ControlSim</a></h3>
+          <p>3D PID tuning guide and visualizer</p>
+        </div>
+        <div class="portfolio-item">
+          <h3><a href="https://github.com/ThanveerCodez/Rags" class="project-link">Rags</a></h3>
+          <p>See what everyone's wearing and how you can elevate your outfits</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" role="form" aria-labelledby="contact-title">
+      <h2 id="contact-title">Get In Touch</h2>
+      <form id="contact-form" aria-describedby="contact-instructions">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="social-links">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Thanveer Muthukumar. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
